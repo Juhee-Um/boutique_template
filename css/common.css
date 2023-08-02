@@ -28,5 +28,36 @@
   --el-title: 2.5rem;
  }
  
+
+
+ /********** Common Style **********/
+
+ .wrapper{
+  width: 100%;
+  height: auto;
+  overflow: hidden;  /* 가로 스크롤 방지 */
+ }
+
+ .page-interval{
+  padding: 0 1.25rem;
+ }
+
+ .wide-center{
+  width: 100%;
+  max-width: 1320px;
+  margin: auto;
+  height: auto;
+}
+
+.narrow-center{
+  width: 100%;
+  max-width: 980px;
+  margin: auto;
+  height: auto;
+}
+
+.section-padding{
+  padding: var(--el-section) 0;
+}
  
  

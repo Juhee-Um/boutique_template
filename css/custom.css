@@ -1,0 +1,100 @@
+/* Top Bar Style */
+
+.top-bar .page-interval{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background: var(--color-top);
+  color: #333;
+  font-size: var(--fs-small);
+  font-weight: 300;
+}
+
+
+.top-bar .company-info{
+  padding: 0.875rem 0;
+}
+
+.top-bar .company-info span{
+  position: relative;
+  padding-right: .5rem;
+  margin-right: .5rem;
+}
+
+.top-bar .company-info span:after{
+  content: '';
+  width: 1px;
+  height: 50%;
+  background: #333;
+  position: absolute;
+  right: 0;
+  top: 60%; /* 원래 50 한 번 확인하기 */
+  transform: translateY(-50%);
+}
+
+/* Navigation style */
+nav{
+  width:100%;
+  height: auto;
+  padding:1.125rem 0;
+  border-bottom: 1px solid #efefef;
+}
+
+nav .page-interval{
+  display:flex;
+  justify-content: space-between; 
+  position:relative;
+}
+
+nav .navi{
+  display:flex;
+  column-gap: 2.375rem;
+}
+
+nav .navi a{
+  font-size:var(--fs-nav);
+  text-transform: uppercase; /* uppercase:대문자, capitalize: 첫글자만 대문자*/
+  font-weight: 400;
+}
+
+nav .logo{
+  position:absolute;
+  left:50%;
+  top:50%;
+  transform: translate(-50%,-50%);
+} /* 기존처럼 page-interval내에서 space between 하면 네비의 ul이 6개라서 정중앙이 아닌 오른쪽으로 밀림. 따라서 space-between 영향 받지 않으려면 position을 absolute로 빼줘야 함 */
+
+nav .cart{
+  position:relative;
+}
+
+nav .cart em{
+  position:absolute;
+  width:18px;
+  height:18px;
+  font-size: .625rem;
+  background:#000;
+  color:#fff;
+  border-radius: 50%; 
+  align-items: center;
+  justify-content: center;
+  display:flex; /* display: flex가 있어야 위의 align-items와 justify-content 쓸 수 있음 */
+  top:-5px;
+  right:-5px;
+}
+/* 글씨는 em안의 컨텐츠가 됨*/
+
+
+/* Hero section style */
+.hero .page-interval{
+  display:flex;
+}
+
+.hero .page-interval > div{
+width:50%;
+background:var(--color-hero);
+}
+
+.hero .page-interval .right-box > img{
+  width:100%;
+}
