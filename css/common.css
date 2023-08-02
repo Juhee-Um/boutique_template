@@ -1,0 +1,32 @@
+/********** Root Style **********/
+:root {
+  /* 1. color */
+  /* 2. font-size */
+  /* 3. element interval */
+ 
+ 
+  /* Color */
+  --color-top: #e4efe8;
+  --color-hero: #f7f0e3;
+  --color-point: #fecfd7;
+ 
+ 
+  /* Font Size */
+  --fs-big: 3.375rem;
+  --fs-middle: 2.1875rem;
+  --fs-small: 0.75rem;
+  --fs-nav: 0.875rem;
+  --fs-title: 3.125rem;
+  --fs-product: 1rem;
+ 
+ 
+  /* Elements Interval */
+  --el-section: 4.6875rem;
+  --el-small: 1rem;
+  --el-middle: 1.875rem;
+  --el-wide: 2.5rem;
+  --el-title: 2.5rem;
+ }
+ 
+ 
+ 
