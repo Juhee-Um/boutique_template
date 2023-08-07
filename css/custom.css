@@ -1,4 +1,4 @@
-/* Top Bar Style */
+s/* Top Bar Style */
 
 .top-bar .page-interval{
   display: flex;
@@ -43,6 +43,12 @@ nav{
 nav .page-interval{
   display:flex;
   justify-content: space-between; 
+  position:relative;
+}
+
+.hero .page-interval > div{
+  width:50%;
+  background: var(--color-hero);
   position:relative;
 }
 
@@ -93,8 +99,117 @@ nav .cart em{
 .hero .page-interval > div{
 width:50%;
 background:var(--color-hero);
+position:relative;
 }
 
+.hero .left-box >img{
+  position:absolute;
+} /* 배경색 위에 꽃무늬 이미지를 넣으면 글자가 밀리는데(디폴트 포지션: static), 배경 컨테이너를 relative로 두고 position을 absolute로 두면 글자 밀리는 것 상관없이 절대값으로 잡아버림 */
+
+.hero .left-box >img:nth-child(1){
+  left:55px;
+  top:55px;
+}
+.hero .left-box >img:nth-child(2){
+  left:22px;
+  top:40%;
+}
+.hero .left-box >img:nth-child(3){
+  bottom:25%;
+  right:-3%;
+}
+
+.hero .hero-text-box{
+  position:absolute;
+  width:100%;
+  height:100%;
+  display:flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  text-align: center;
+}
+
+.hero .hero-text-box strong{
+  letter-spacing: 4px;
+  text-transform: uppercase;
+  margin-bottom: 5px;
+  font-size: 0.875rem;
+  font-weight: 400;
+  line-height: 150%;
+ }
+ 
+ 
+ .hero .hero-text-box h1{
+  color: #000;
+  margin-top: 0;
+  margin-bottom: .625rem;
+  font-size: var(--fs-big);
+  font-weight: 400;
+  line-height: 150%;
+ }
+ 
+ 
+ .hero .hero-text-box em{
+  color: #333;
+  font-size: .875rem;
+  font-weight: 400;
+  line-height: 150%;
+ }
+ 
+ 
 .hero .page-interval .right-box > img{
   width:100%;
 }
+
+/* Story Section Style */
+
+  .story .story-text{
+  color: #333;
+  text-align: center;
+  margin: 60px 0;
+  font-size: var(--fs-middle);
+  font-weight: 200;
+  line-height: 150%;
+ }
+
+  .story .story-image-box{
+  display:flex;
+  justify-content: space-between;
+ }
+
+  .story .story-image-box > div {
+  width:45%;
+  position:relative;
+ }
+
+  .story .story-image-box .line{
+  width:100%;
+  height:100px;
+  border-left: 1px solid #d9d9d9;
+  margin-bottom: 3.125rem;    
+ }
+
+  .story .story-right p{
+  font-size:1.25rem;
+  font-weight:200;
+  line-height: 150%;
+  margin:1.875rem 0;
+ }
+
+  .story .button-box{
+  justify-content: flex-start;
+ }
+
+  .story .story-image-box > div >img{
+  width:100%;
+ }
+ 
+  .story .story-left > img{
+  position:absolute;
+  left:0;
+  bottom: 0;
+ }
+
+
+

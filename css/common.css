@@ -60,4 +60,77 @@
   padding: var(--el-section) 0;
 }
  
+ /********** Common Button Style **********/
+ .button-box{
+  width:100%;
+  display:flex;
+  justify-content: center;
+  margin-top: 3.75rem;
+ }
+
+ .common-btn{
+  font-size:.875rem;
+  font-weight:400;
+  padding:.875rem 1.5625rem;
+  color:#000;
+  border:1px solid #000;
+  display:flex;
+  align-items: center;
+  justify-content: center;
+  text-transform: uppercase;
+  column-gap: .5rem;
+  transition:all .4s;
+ }
+
+ .common-btn:hover{
+  background: #000;
+  color:#fff;
+ }
+
+ .white{
+  display:none;
+ }
+
+ /********* Common Section Title Styel ************/
+ .title-box{
+  width:100%;
+  height:auto;
+  text-align: center;
+ }
+
+ .title-box .title-label{
+  position:relative; /* 라벨 왼쪽 상단의 동그란 도형을 position:absolute 줘서 라벨 왼쪽 상단으로 위치 지정하기 위함 */
+  display:inline-block;   /* 그냥 썼음 */
+ }
+
+ .title-box .label-text{
+  color: #000;
+  text-align: center;
+  text-transform: uppercase;
+  background-color: var(--color-point);
+  padding: 4px 15px;
+  font-size: 0.875rem;
+  font-weight: 300;
+  line-height: 150%;
+  display: inline-block;
+ }
+
+ .title-box .circle-effect{
+  width:10px;
+  height:10px;
+  background: var(--color-point);
+  position:absolute;
+  left:-10px;
+  top:-10px;
+  border-radius: 50%;
+  border-bottom-right-radius: 0;
+ }
  
+
+.title-box h2{
+  color:#000;
+  margin-bottom:0.625rem;
+  font-size: 3.125rem;
+  font-weight:100;
+  line-height:150%;
+}
