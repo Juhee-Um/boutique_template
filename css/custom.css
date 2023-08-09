@@ -1,4 +1,4 @@
-s/* Top Bar Style */
+/* Top Bar Style */
 
 .top-bar .page-interval{
   display: flex;
@@ -211,5 +211,192 @@ position:relative;
   bottom: 0;
  }
 
+/* Best and Latest Section Style */
+
+.best .best-products-box,
+.latest .latest-products-box{
+  display:flex;
+  column-gap: 1rem;
+}
+
+.best .best-product-list img,
+.latest .latest-product-list img{
+  width:100%; /* 박스는 잘 만들어져 있는데 사진이 너무 커서 밖으로 빠져나가니까 박스 안에서 100% 채우록 하기 위해 */
+  transition:all .4s;
+}
+
+.best .best-image,
+.latest .latest-image{
+  overflow:hidden; /* 원래 이미지 박스까지 같이 커졌는데, overflow:hidden을 주면 박스 사이즈 넘어가는 부분은 잘리면서 상품만 움직이는 효과 */
+}
+
+.best .best-product-list img:hover,
+.latest .latest-product-list img:hover{ /* list에 hover 시 효과 주려면 여기서 img 앞의 /....list:hover 이렇게 쓰기 */
+  transform:scale(1.05);
+}
+
+.best .best-product-info,
+.latest .latest-product-info{
+  width:100%;
+  text-align: center;
+  margin-top:.9375rem;
+}
+
+.best .best-product-info h4,
+.latest .latest-product-info h4{
+  margin-bottom:.35rem;
+  font-size:1rem;
+  font-weight: 400;
+  line-height: 150%;
+}
+.best .best-product-info p,
+.latest .latest-product-info p{
+  color:#333;
+  font-size:.875rem;
+  font-weight:400;
+}
+
+/* Latest section not common element */
+.latest .latest-products-box{
+  flex-wrap: wrap;
+  row-gap:3.125rem;
+}
+
+.latest .latest-product-list{
+  width:calc(25% - .75rem);
+}
 
 
+/* Feature Section Style */
+.featured{
+  /**/width:100%;
+  /**/height: auto;
+  background: var(--color-top);
+  _padding: 5rem;
+  margin:var(--el-section) 0;
+  position:relative;
+}
+
+.featured > img{
+  position:absolute;
+}
+
+.featured >img:nth-child(2){
+  bottom:25%;
+  right:0%;
+}
+
+/* left:22px;
+  top:40%; */
+
+  /* bottom:25%;
+  right:-3%; */
+
+.featured .featured-box{
+  display:flex;
+  justify-content: space-between;
+  /**/padding:7.5rem 0;
+}
+
+.featured .featured-box .featured-list{
+  display:flex;
+  column-gap: .75rem;
+  align-items: center;
+}
+
+.featured .featured-text p{
+  color:#000;
+  font-size: 1.125rem;
+  font-weight:400;
+  line-height: 150%;
+}
+.featured .featured-text em{
+  color:#333;
+  font-size: .875rem;
+  font-weight: 300;
+  line-height: 150%;
+}
+
+/* Join section style */
+.join{
+  width:100%;
+  background:var(--color-hero);
+  padding: 5rem 0;
+  margin:var(--el-section);
+}
+
+.join .wide-center{
+  display:flex;
+  justify-content: space-between;
+  /**/align-items: center;
+  padding: 0 10rem;
+}
+
+.join .join-left-box,
+.join .join-right-box{
+  width:40%;
+}
+
+.join .join-left-box img{
+  width:100%;
+}
+
+.join .line{
+  width:1px;
+  height:360px;
+  background:#ede4d2;
+}
+
+.join .join-right-box{
+  /**/text-align:center;
+}
+
+.join .join-right-box h3{
+  color: #000;
+  margin-bottom: 10px;
+  font-size: 1.5rem;
+  font-weight: 400;
+  line-height: 150%;
+ }
+ 
+ 
+ .join .join-right-box p{
+  color: #333;
+  font-size: .875rem;
+  font-weight: 400;
+  line-height: 150%;
+ }
+ 
+ .join form{
+  margin-top:2.5rem;
+  width:100%;
+  display:flex; /* */
+  border-bottom:1px solid #000;
+  justify-content: space-between;
+  padding:.5rem 0;
+ }
+ 
+ 
+ .join form input{
+  border:none;
+  background:none;
+  width:100%;
+  outline:0; /* 기존에 있던 회색 입력 박스 포맷 다 날림 */
+ }
+ 
+ 
+ .join form button{
+  border:none;
+  background:none;
+  outline:0; /* 기존에 있던 버튼 박스 포맷 다 날림 */
+ }
+ 
+ 
+ .join form input::placeholder{
+  color:#333;
+  font-family: 'Outfit', sans-serif; /*placeholder나 a, input 같은 애들은 폰트 상속이 안되어서 직접 지정*/
+ }
+ 
+ 
+ 
+ 
