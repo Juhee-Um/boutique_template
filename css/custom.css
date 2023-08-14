@@ -322,7 +322,7 @@ position:relative;
   width:100%;
   background:var(--color-hero);
   padding: 5rem 0;
-  margin:var(--el-section);
+  margin:var(--el-section) 0;
 }
 
 .join .wide-center{
@@ -399,4 +399,225 @@ position:relative;
  
  
  
- 
+/* Review section style */
+.review{
+  width:100%;
+  background:var(--color-hero);
+  position:relative;
+  padding: 7.5rem 0;
+}
+
+.review .narrow-center{
+  position:relative;
+}
+
+.review .review-text p{
+  width:100%;
+  max-width: 80%;
+  color: #333;
+  text-align: left;
+  font-size: 2.25rem;
+  font-weight:200;
+  line-height: 150%;
+}
+
+.review .review-info{
+  width:100%;
+  display: flex;
+  align-items: center;
+  margin-top:3.75rem;
+  column-gap: 1.25rem;
+}
+
+.review .review-info .user{
+  width:70px;
+  height:70px;
+}
+
+.review .review-info .user img{
+  width:100%; 
+}
+
+.review .review-info .user-info p{
+color: #000;
+font-weight: 400;
+line-height: 150%;
+}
+
+.review .review-info .user-info span{
+  color:#333;
+  font-size: .875rem;
+  font-weight: 400;
+  line-height: 150%;  
+}
+
+.swiper-navigation{
+  position:absolute;
+  width:100%;
+  right:0;
+  bottom:0;
+  display:flex;
+  justify-content: flex-end;
+  column-gap: 2.5rem;
+}
+
+.swiper-button-next,
+.swiper-button-prev{
+  position:relative;
+  margin:0;
+  width:45px;
+  height:45px;
+  border:1px solid #000;
+  border-radius: 30px;
+  display:flex;
+  align-items: center;
+  justify-content: center;
+  transition: all .4s;
+}
+
+.swiper-button-next:hover,
+.swiper-button-prev:hover{
+  background:#333;
+}
+
+.swiper-button-next .arrow-white,
+.swiper-button-prev .arrow-white{
+  display:none;
+}
+
+
+.swiper-button-prev:after, .swiper-rtl .swiper-button-next:after {
+  content: '';
+}
+
+.swiper-button-next:after, .swiper-rtl .swiper-button-prev:after{
+  content: '';
+}
+
+/* Category Section Style */
+.category .category-box{
+  margin-top:2.5rem;
+  display:flex;
+  column-gap:1.875rem;
+}
+
+.category .category-list {
+  position:relative;
+}
+
+.category .category-text{
+  position:absolute;
+  left:0;
+  bottom:3.125rem;
+  width:100%;
+  text-align: center;
+}
+
+.category .category-box img{
+  width:100%;
+}
+
+.category .category-text h4{
+  color:#fff;
+  text-transform: uppercase;
+  margin-bottom: .625rem;
+  font-size: 1.625rem;
+  font-weight: 400;
+  line-height: 150%;
+}
+
+.category .category-text .category-btn{
+  color: #000;
+ text-align: center;
+ text-transform: uppercase;
+ background-color: #fff;
+ padding: .875rem 4.25rem;
+ font-size: .875rem;
+ font-weight: 400;
+ line-height: 150%;
+ display: inline-block;
+}
+
+/* Insta section Style */
+/* .insta{
+  width:100%;
+} */
+
+.insta .insta-lists{
+  width:100%;
+  display:grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+  _grid-template-columns: repeat(5,1fr); /* 위와 같이 1fr 계속 쓰기 귀찮을 때 이와 같이 써도 됨. */
+  column-gap: 1px;
+}
+
+.insta .insta-lists img.pic{
+  width:100%;
+  transition: all .4s;
+}
+
+.insta .insta-lists img.pic:hover{
+  transform: scale(1.05);
+}
+
+.insta .insta-lists li{
+  position:relative;
+  overflow: hidden;
+}
+
+.insta .insta-lists li .icon{
+  position: absolute;
+  left:50%;
+  top:50%;
+  transform: translate(-50%, -50%);
+  width:55px;
+  height:55px;
+  opacity:0;
+  visibility: hidden; /* opacity 0만 하면 없는 것처럼 보이지만 실제로 있고 hover 효과도 적용됨, visibility hidden은 없는 것처럼 취급. display none은 없애는 효과 */
+  transition:all .4s;
+} 
+
+.insta .insta-lists li:hover img.icon{
+opacity:1;
+visibility:visible;}
+
+
+/* Footer Style */
+footer{
+  width:100%;
+  height:auto;
+  padding: 5rem 0 1.5rem;
+  background: #000;
+  color:#fff;
+}
+
+footer button{
+  border-style: none;
+  background-color: black;
+}
+
+footer .footer-upper{
+  width:100%;
+  display:flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-bottom: 7.5rem;
+  border-bottom: 1px solid #999;
+}
+
+footer .footer-upper .footer-left{
+  width:40%;
+}
+
+footer .footer-upper .footer-left h3{
+  margin:3.125rem 0 1.25rem;
+  margin-bottom: .625rem;
+  font-size: 1.5rem;
+  font-weight:400;
+  line-height: 150%;
+}
+
+footer .footer-upper .footer-right{
+  display: flex;
+  column-gap: 2rem;
+}
