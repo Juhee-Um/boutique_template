@@ -44,6 +44,7 @@ nav .page-interval{
   display:flex;
   justify-content: space-between; 
   position:relative;
+  align-items: center;
 }
 
 .hero .page-interval > div{
@@ -89,6 +90,10 @@ nav .cart em{
   right:-5px;
 }
 /* 글씨는 em안의 컨텐츠가 됨*/
+
+nav .menu-icon{
+  display:none;
+}
 
 
 /* Hero section style */
@@ -593,7 +598,7 @@ footer{
 
 footer button{
   border-style: none;
-  background-color: black;
+  background-color: transparent;
 }
 
 footer .footer-upper{
@@ -617,7 +622,62 @@ footer .footer-upper .footer-left h3{
   line-height: 150%;
 }
 
+footer form{
+  width:100%;
+  border-bottom: 1px solid #fff;
+  display:flex;
+  align-items: center;
+  column-gap: 1rem;
+}
+
+footer input{
+  background: transparent; /* 투명 색상 */
+  border:0;
+  outline: 0;
+  padding: .75rem 0;
+  width:80%;
+  color:#fff;
+}
+
+footer input::placeholder{
+  font-family: 'Outfit', sans-serif;
+  color:#fff;
+}
+
+footer .footer-left em{
+  font-size: .75rem;
+  font-weight: 400;
+  line-height: 150%;
+  margin-top: 1rem;
+  display:block;
+}
+
 footer .footer-upper .footer-right{
+  width:45%;
+  justify-content: space-between;
   display: flex;
-  column-gap: 2rem;
+  _column-gap: 2rem;
+}
+
+footer .footer-right ul li{
+  padding-bottom: 1.56rem;
+}
+
+footer .footer-right ul li a{
+  font-size: .875rem;
+  font-weight: 400;
+  line-height: 150%;
+}
+
+footer .footer-lower{
+display: flex;
+justify-content: space-between;
+padding:1.25rem 0;
+}
+
+footer .footer-lower p{
+  color: #fff;
+  font-size: .875rem;
+  font-weight: 400;
+  line-height: 150%;
 }

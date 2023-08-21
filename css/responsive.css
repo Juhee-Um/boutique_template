@@ -1,0 +1,196 @@
+/* 1280px */
+@media screen and (max-width:1280px){
+  nav .navi{
+    order:2;
+  }
+
+  nav .logo{
+    position:static;
+    order:1;
+    transform:translate(0, 0);
+  }
+
+  nav .cart{
+    order:3; /* 로고, 네비, 카트 순서를 직접 지정해 바꿔줌 */
+  }
+}
+
+/* 980px */
+@media screen and (max-width:980px){
+.top-bar{
+  display:none;
+}
+
+.section-padding{
+  padding:var(--el-t-section) 0;
+}
+
+.title-box h2{
+  font-size: 2.5rem;
+}
+
+nav .menu-icon{
+  display:block;
+}
+
+nav .navi{
+  position:absolute; /* 네비 바를 햄버거 눌럿을 때 나오게 하려면 일단 전체 nav*/
+  top:calc(100% + 1.125rem); 
+  z-index: 9999;
+  width:100%;
+  background:#fff;
+  flex-direction: column;
+  left:0;
+  height:0; 
+  overflow:hidden; /* 부모인 navi의 높이가 height:0;으로 줬으므로 자식인 a, 즉 네비바 메뉴들은 부모 높이가 없이 그 밖으로 빠져나와 있는 상태. 따라서 overflow를 hidden으로 주면 자식요소들 사라짐(모두가 부모로부터 overflow하고 있으므로) > 클릭 시 생기게 하는건 자바로. */
+  transition: all .4s;
+}
+
+nav .navi a{
+  width:100%;
+  padding:1rem 1.25rem;
+  display:inline-block;
+  transition:all .4s;
+}
+
+  nav .navi a:hover{
+    background:#000;
+    color:#fff;
+}
+  .hero .page-interval{
+    flex-direction: column;
+}
+
+  .hero .page-interval > div{
+    width:100%;
+}
+
+.hero .hero-text-box{
+  padding:4.375rem;
+  overflow:hidden;
+  position:relative;
+}
+
+.hero .hero-text-box h1{
+  font-size: 2.875rem;
+}
+
+.story .story-text{
+  font-size: 1.875rem;
+}
+
+.best .best-products-box, 
+.latest .latest-products-box{
+flex-wrap: wrap;
+row-gap: 3.125rem;
+}
+
+.best .best-product-list,
+.latest .latest-product-list{
+  width:calc(33.33% - .75rem); /* 4개에서 3개로 만들때는 -.75rem 공식이 있긴 할텐데 그냥  외워서 한다고 하심*/
+}
+
+.featured .featured-box{
+  flex-wrap: wrap;
+  padding: 3.75rem;
+  row-gap: 1.25rem;
+}
+
+.featured .featured-box .featured-list {
+  width: 50%;
+}
+
+.join .wide-center{
+  justify-content: space-evenly;
+}
+
+.join .wide-center{
+  flex-direction: column;
+  row-gap: 2.5rem;
+}
+
+.join .wide-center > div{
+  width:80%;
+}
+
+.join .line{
+  width:100%;
+  height:1px;
+  max-width: 80%;
+}
+
+.category .category-text h4{
+  font-size: 1.25rem;
+
+}
+
+}
+/* End of 980px Wide */
+
+/* 768px */
+@media screen and (max-width:768px){
+  html, body{
+    font-size: 87.5%;
+  }
+
+  .best .best-product-list,
+.latest .latest-product-list{
+  width:calc(50% - .5rem); /* 3개에서 2개로 만들때는 50% -.5rem 정도거나 더 작게? 공식이 있긴 할텐데 그냥  외워서 한다고 하심*/
+}
+.category .category-box{
+  flex-wrap: wrap;
+  row-gap: .875rem;
+}
+
+.category .category-list{
+  width: calc(50% - .9375rem);
+}
+
+}
+/* End of 768px Wide*/
+
+/* 480px */
+@media screen and (max-width:480px){
+  .section-padding{
+    padding: var(--el-m-section) 0;
+  }
+
+  .title-box{
+    padding:.875rem 0;
+  }
+  
+  .logo img{
+    width:90px;
+  }
+  
+  .hero .hero-text-box{
+    padding:4rem 1.25rem;
+  }
+  .hero .hero-text-box h1{
+    font-size: 2.125rem;
+  }
+
+  .hero .left-box >img{
+    display:none;
+  }
+
+  .story .story-text{
+    font-size: 1.5rem;
+  }
+
+  .story .story-right p{
+    font-size: .9375rem;
+  }
+
+  .featured .featured-box{
+    padding:2.5rem 0;
+  }
+
+  .featured .featured-list{
+    width:100%;
+  }
+  .join .wide-center > div{
+    width:100%;
+  }
+}
+/* End of 480px Wide*/

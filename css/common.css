@@ -22,6 +22,8 @@
  
   /* Elements Interval */
   --el-section: 4.6875rem;
+  --el-t-section: 2.8125rem; /* 태블릿사이즈(max width:980)일 때 섹션 간격 줄이기 위함*/
+  --el-m-section: 1.25rem;
   --el-small: 1rem;
   --el-middle: 1.875rem;
   --el-wide: 2.5rem;
@@ -47,6 +49,7 @@
   max-width: 1320px;
   margin: auto;
   height: auto;
+  padding: 0 20px;
 }
 
 .narrow-center{
@@ -54,6 +57,7 @@
   max-width: 980px;
   margin: auto;
   height: auto;
+  padding: 0 20px;
 }
 
 .section-padding{
